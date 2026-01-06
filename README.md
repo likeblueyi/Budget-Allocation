@@ -1,9 +1,15 @@
 # Budget Allocation and Its End-to-End Combinatorial Optimization Strategy
+## Preface
+Given the large number of formulas in this project, we recommend reading this README.md in a local Markdown editor to prevent display issues on platforms like GitHub. Next, we will introduce how to run the project's source code:
+(i) Unzip the compressed package `main.zip`;
+(ii) Directly run the file at the path `\rethink_exp\test programing.py`;
+(iii)Select the baseline method as prompted to complete the model training, validation and testing operations.
+
 ## Problem Introduction
 **Problem Background:** Uncertainty-embedded budget allocation problems arise in contexts where nonprofit entities endeavor to propagate philanthropic information across a portfolio of websites, all while operating under the binding constraint of a fixed total budget.
 
 **Prediction Phase:** Given the feature representation $\mathbf{x}^w$ pertaining to website $w$, the task consists of forecasting $\mathbf{y}^w$ namely, the likelihood that informational content hosted on website will successfully reach the intended customer base, as  below.
-$  y^w=\mathcal{M}_\theta(\mathbf{x}^w). $
+$y^w=\mathcal{M}_\theta(\mathbf{x}^w).$
 
 **Decision Phase:** The overarching objective is to maximize the expected count of users who are reached by at least one website within the set. Mathematically, this optimization challenge is formalized as below.
 $$
@@ -95,5 +101,5 @@ $
 | LODL            | 25.700            |
 | NCE             | 9.979             |
 | Org-LTR         | 5.742             |
-| SAA-LTR (ours)  | $\textbf{\underline{4.259}}$ |
+| SAA-LTR (ours)  | **4.259** |
 
